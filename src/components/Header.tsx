@@ -1,5 +1,5 @@
 import '../styles/Header.css'
-import Card from './Card'
+import Card from './Card' 
 
 export default function Header() {
     return (
@@ -10,7 +10,7 @@ export default function Header() {
                 <h2 class='subheader'>Projects</h2>
             </div>
             <hr class='solid' />
-            <Card title='Software Developer'/>
+            <Card title='Software Developer' info={{location: 'Ebor Systems', start: 0, end: 50}}/>
         </div>
     )
 }
