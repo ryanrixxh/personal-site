@@ -1,24 +1,16 @@
-import '../styles/header.css'
+import '../styles/Header.css'
+import Card from './Card'
 
-import { Tab } from '@mui/base/Tab'
-import { TabsList } from '@mui/base/TabsList'
-import { TabPanel } from '@mui/base/TabPanel'
-import { Tabs } from '@mui/base/Tabs'
-
-
-function Header() {
+export default function Header() {
     return (
-        <div className='headerCard'>
-            <h1 className="name">Ryan Richards</h1>
-            <Tabs className='headerTabCard' defaultValue={0}>
-                <TabsList>
-                    <Tab className="headerTab" value={0}>Experience</Tab>
-                    <Tab className="headerTab" value={1}>Projects</Tab>
-                    <Tab className="headerTab" value={2}>Blog</Tab>
-                </TabsList>
-            </Tabs>
+        <div>
+            <h1 class='name'>Ryan Richards</h1>
+            <div class='subheader-container'>
+                <h2 class='subheader'>Experience</h2>
+                <h2 class='subheader'>Projects</h2>
+            </div>
+            <hr class='solid' />
+            <Card title='Software Developer'/>
         </div>
     )
 }
-
-export default Header

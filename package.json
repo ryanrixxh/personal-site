@@ -3,23 +3,18 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --watch",
-    "start": " astro dev",
-    "build": "astro build",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.3",
-    "@mui/base": "^5.0.0-beta.20",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "astro": "^3.3.2",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "@astrojs/check": "^0.3.0",
+    "@astrojs/solid-js": "^3.0.2",
+    "@types/prop-types": "^15.7.9",
+    "astro": "^3.4.0",
+    "solid-js": "^1.8.4",
+    "typescript": "^5.2.2"
   }
 }
