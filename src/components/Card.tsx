@@ -1,28 +1,51 @@
-import { onMount } from 'solid-js'
+import '../styles/Card.css'
+import { For, onMount } from 'solid-js'
+import { type ProjData, type ExpData } from '../data/Data'
 
 export interface CardProps {
-    title: string,
-    info: Info<ProjDetails | ExpDetails>,
+    info: Info<ProjData | ExpData>,
+    // details: string[],
 }
 
-interface ProjDetails {
-    techStack: string[],
-}
-
-interface ExpDetails {
-    location: string,
-    start: number,
-    end: number,
-}
-
-type Info<T extends ProjDetails | ExpDetails> = T extends ProjDetails ? ProjDetails : ExpDetails
+type Info<T extends ProjData | ExpData> = T extends ProjData ? ProjData : ExpData
 
 export default function Card(props: CardProps) {
+    function isProj(info: Info<ProjData | ExpData>): info is ProjData {
+        return (info as ProjData).techStack !== null
+    }
+
+    function isExp(info: Info<ProjData | ExpData>): info is ExpData {
+        return (info as ExpData).location !== null
+    }
+
     onMount(() => {
-        console.log(props.info)
+        print()
     })
 
     return (
-        <h1>{props.title}</h1>
+        <div>
+            <div class='cardInfoContainer'>
+            <h1>{props.info.title}</h1>
+            
+            { isProj(props.info) && 
+                <p>{props.info.techStack}</p> 
+            }
+            
+            { isExp(props.info) &&
+                <span class='cardInfoContainer'>
+                    <p>{props.info.location} </p>
+                    <p>{props.info.start} - {props.info.end} </p>
+                </span>
+            }
+
+            {/* <div>
+                <ul>
+                    <For each={props.details}>{(point, i) =>
+                        <li>{point}</li>
+                    }</For>
+                </ul>
+            </div> */}
+            </div>
+        </div>
     )
 }

@@ -1,0 +1,22 @@
+{
+    "experience": 
+    [
+        {
+            "title": "Software Developer",
+            "location": "Ebor Systems",
+            "start": "Oct 2022",
+            "end": "Present"
+        }
+    ],
+    "projects": 
+    [
+        {
+           "title": "Twitch Timestamper",
+           "techStack": ["Typescript", "React", "Rust"] 
+        },
+        {
+            "title": "XML Aggregation Server",
+            "techStack": ["Java"]
+        }
+    ]
+}

@@ -1,5 +1,7 @@
 ---
 import Header from '../components/Header'
+import Card from '../components/Card'
+import { getExpData, getProjData } from '../data/Data';
 ---
 
 <html lang="en">
@@ -12,5 +14,6 @@ import Header from '../components/Header'
 	</head>
 	<body>
 		<Header client:load/>
+		<Card client:load info={getExpData()[0]}/>
 	</body>
 </html>
