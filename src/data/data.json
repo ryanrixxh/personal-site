@@ -2,21 +2,31 @@
     "experience": 
     [
         {
-            "title": "Software Developer",
-            "location": "Ebor Systems",
-            "start": "Oct 2022",
-            "end": "Present"
+            "info": {
+                "title": "Software Developer",
+                "location": "Ebor Systems",
+                "start": "Oct 2022",
+                "end": "Present"
+            },
+            "details": [
+                "Design and implementation of a complex full-stack production system for real-time collaborative defense planning.",
+                "Development of comprehensive automated unit & E2E testing and containerization of large preexisting codebase",
+                "Agile development experience, git and issue tracking experience.",
+                "Reviews of design and implementation, fostering of positive team culture and graduate mentoring."
+            ]
         }
     ],
     "projects": 
     [
         {
-           "title": "Twitch Timestamper",
-           "techStack": ["Typescript", "React", "Rust"] 
-        },
-        {
-            "title": "XML Aggregation Server",
-            "techStack": ["Java"]
+           "info": {
+                "title": "Twitch Timestamper",
+                "techStack": ["Typescript", "React", "Rust"] 
+           },
+           "details": [
+                "Cross platform desktop application with installer available for Windows.",
+                "Rust based backend infastructure built with Tauri. Used for webview rendering and secure filesystem manipulation operations."
+           ]
         }
     ]
 }

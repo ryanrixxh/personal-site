@@ -1,15 +1,21 @@
 import data from './data.json'
 
 export interface ProjData {
-    title: string,
-    techStack: string[],
+    info: {
+        title: string,
+        techStack: string[],
+    }
+    details: string[],
 }
 
 export interface ExpData {
-    title: string,
-    location: string,
-    start: string,
-    end: string,
+    info: {
+        title: string,
+        location: string,
+        start: string,
+        end: string,
+    }
+    details: string[],
 }
 
 export function getProjData(): ProjData[] {
