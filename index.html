@@ -1,7 +1,10 @@
 <!doctype html>
-<lang="en">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
+    <meta name="description" content="The personal page of Ryan Richards. Adelaide based software engineer who loves to express his creativity and solve problems through elegent software"/>
+    <meta name="viewport" />
+    <title>Ryan Richards</title>
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>
@@ -14,19 +17,19 @@
                   <nav aria-label="Global" class="md:block">
                     <ul class="flex items-center lg:gap-12 lg:text-base sm:gap-22 sm:text-2xl">
                       <li>
-                        <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('about')"> About Me</button>
+                        <button aria-label="Show About Me section" class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('about')">About Me</button>
                       </li>
 
                       <li>
-                        <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('experience')"> Experience </button>
+                        <button aria-label="Show Experience section" class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('experience')">Experience</button>
                       </li>
 
                       <li>
-                        <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('projects')"> Projects <button>
+                        <button aria-label="Show Projects section" class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('projects')">Projects<button>
                       </li>
 
                       <li>
-                        <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('contact')"> Contact </button>
+                        <button aria-label="Show Contact section" class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('contact')">Contact</button>
                       </li>
                     </ul>
                   </nav>
@@ -50,3 +53,4 @@
         </div>
     </div>
   </body>
+</html>
