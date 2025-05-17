@@ -22,11 +22,11 @@
                       </li>
 
                       <li>
-                        <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
+                        <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('projects')"> Projects <button>
                       </li>
 
                       <li>
-                        <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Contact </a>
+                        <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('contact')"> Contact </button>
                       </li>
                     </ul>
                   </nav>
@@ -40,6 +40,12 @@
             </div>
             <div x-show="experience" id="experience" x-data="component">
                 <div x-html="addComponent('./src/components/experience.html')"></div>
+            </div>
+            <div x-show="projects" id="projects" x-data="component">
+                <div x-html="addComponent('./src/components/project.html')"></div>
+            </div>
+            <div x-show="contact" id="contact" x-data="component">
+                <div x-html="addComponent('./src/components/contact.html')"></div>
             </div>
         </div>
     </div>
