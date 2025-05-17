@@ -1,0 +1,19 @@
+<!doctype html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script type="module" src="/src/main.ts"></script>
+    <div id="container" class="flex flex-col min-h-screen min-w-screen justify-center items-center">
+        <h1 class="mb-1.5 text-6xl">Ryan Richards</h1>
+        <div x-data="component" id="links">
+            <div x-html="addComponent('./src/components/links.html')"></div>
+        </div>
+        <!-- <div id="project-cards" x-data="component">
+            <div x-html="addComponent('./src/components/project.html')"></div>
+        </div> -->
+    </div>
+
+  </body>
+</html>
