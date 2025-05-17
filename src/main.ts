@@ -3,8 +3,8 @@ import Alpine from 'alpinejs'
 
 const component = () => {
   return {
-    async addComponent(address: string) {
-      return await(await fetch(address)).text()
+    async addComponent(component: string) {
+      return await(await fetch(`components/${component}`)).text()
     }
   }
 }
