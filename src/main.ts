@@ -30,7 +30,7 @@ const toggle = () => {
           this.unsetAll()
           this.projects = true
           break
-        case 'projects':
+        case 'contact':
           this.unsetAll()
           this.contact = true
           break
