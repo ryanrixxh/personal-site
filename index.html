@@ -5,7 +5,7 @@
   </head>
   <body>
     <script type="module" src="/src/main.ts"></script>
-    <div x-data="toggle" id="container" class="flex flex-col min-h-screen min-w-screen justify-center items-center">
+    <div x-data="toggle" id="container" class="flex flex-col absolute min-w-screen top-1/5 self-w-300 justify-start items-center">
         <div id="menu">
             <h1 class="lg:text-6xl sm:text-8xl text-center">Ryan Richards</h1>
             <header class="bg-white">
@@ -34,7 +34,7 @@
               </div>
             </header>
         </div>
-        <div id="content" class="lg:w-150 sm:w-175 h-130 flex flex-col justify-start mt-2 sm:mt-25">
+        <div id="content" class="lg:w-150 sm:w-175 h-130 flex flex-col justify-start mt-10">
             <div x-show="about" id="about-me" x-data="component">
                 <div x-html="addComponent('about.html')"></div>
             </div>
