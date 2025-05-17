@@ -6,13 +6,13 @@
   <body>
     <script type="module" src="/src/main.ts"></script>
     <div x-data="toggle" id="container" class="flex flex-col min-h-screen min-w-screen justify-center items-center">
-        <div id="menu" class="absolute top-1/5">
-            <h1 class="text-6xl">Ryan Richards</h1>
+        <div id="menu">
+            <h1 class="lg:text-6xl sm:text-8xl text-center">Ryan Richards</h1>
             <header class="bg-white">
-              <div class="flex h-16 max-w-screen-xl gap-8">
+              <div class="flex h-16 max-w-screen-xl gap-10">
                 <div class="flex flex-1 items-center justify-center">
                   <nav aria-label="Global" class="md:block">
-                    <ul class="flex items-center gap-6 text-sm">
+                    <ul class="flex items-center lg:gap-12 lg:text-base sm:gap-22 sm:text-2xl">
                       <li>
                         <button class="text-gray-500 transition hover:text-gray-500/75" @click="toggle('about')"> About Me</button>
                       </li>
@@ -34,7 +34,7 @@
               </div>
             </header>
         </div>
-        <div id="content" class="w-150 h-130 flex flex-col justify-start">
+        <div id="content" class="lg:w-150 sm:w-175 h-130 flex flex-col justify-start mt-2 sm:mt-25">
             <div x-show="about" id="about-me" x-data="component">
                 <div x-html="addComponent('about.html')"></div>
             </div>
